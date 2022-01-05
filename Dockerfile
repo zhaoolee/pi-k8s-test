@@ -3,7 +3,7 @@ FROM node:17 as build
 WORKDIR /opt
 RUN git clone --depth=1 https://github.com/zhaoolee/pi-k8s-test.git
 
-WORKDIR /app/pi-k8s-test
+WORKDIR /opt/pi-k8s-test
 RUN npm install
 
 
