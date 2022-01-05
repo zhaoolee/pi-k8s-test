@@ -26,10 +26,12 @@ apiVersion: v1
 kind: Service
 metadata:
   name: pi-k8s-test
+  namespace: ingress-nginx
 spec:
   selector:
     app: pi-k8s-test
-  type: ClusterIP
+  type: NodePort
   ports:
     - port: 3000        # 本 Service 的端口
       targetPort: 3000  # 容器端口
+      nodePort: 31200
