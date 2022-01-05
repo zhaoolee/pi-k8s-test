@@ -7,13 +7,15 @@
 
 ```
 cd /opt
-wget https://raw.githubusercontent.com/zhaoolee/pi-k8s-test/main/Dockerfile
-docker build  -t pi-k8s-test:001 . --no-cache
+git clone https://github.com/zhaoolee/pi-k8s-test --depth=1
+cd pi-k8s-test
+sudo docker build  -t zhaoolee/pi-k8s-test:001 . --no-cache
+sudo docker push zhaoolee/pi-k8s-test:001
 ```
 
 
 测试容器
 
 ```
-docker run -p 3000:3000 --name pi-k8s-test-server pi-k8s-test:001
+docker run -p 3000:3000 --name pi-k8s-test-server zhaoolee/pi-k8s-test:001
 ```
