@@ -1,0 +1,25 @@
+{
+  "name": "pi-k8s-test",
+  "version": "1.0.0",
+  "description": "树莓派k8s测试程序",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhaoolee/pi-k8s-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhaoolee/pi-k8s-test/issues"
+  },
+  "homepage": "https://github.com/zhaoolee/pi-k8s-test#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "moment": "^2.29.1"
+  }
+}
